@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Введіть чисельник:");
+        double numerator = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Введіть знаменник:");
+        double denominator = Convert.ToDouble(Console.ReadLine());
+
+        if (denominator == 0)
+        {
+            Console.WriteLine("Помилка: на нуль ділити не можна!");
+        }
+        else
+        {
+            double result = numerator / denominator;
+            Console.WriteLine($"Результат: {result}");
+        }
+
+        Console.WriteLine("Натисніть Enter, щоб вийти.");
+        Console.ReadLine();
+    }
+}
